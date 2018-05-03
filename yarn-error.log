@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run dev-server
+  C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run test -- --watch
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Java\jre1.8.0_144\bin;C:\PROGRA~2\Groovy\GROOVY~1.13\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Admin\AppData\Roaming\npm;C:\Program Files\heroku\bin
@@ -21,7 +21,6 @@ npm manifest:
     "author": "p_b_l",
     "license": "MIT",
     "scripts": {
-  
       "build:dev": "webpack",
       "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
@@ -6615,7 +6614,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: C:\Windows\system32\cmd.exe
-  Arguments: /d /s /c webpack-dev-server
+  Arguments: /d /s /c jest --config=jest.config.json --watch
   Directory: C:\Users\Admin\Desktop\Pooja\React\Expensify_App
   Output:
   
