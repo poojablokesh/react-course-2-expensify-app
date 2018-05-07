@@ -29,7 +29,6 @@ export class ExpenseListFilters extends React.Component {
 							}
 						}
 
-
 	render () {
 		return(
 				<div>

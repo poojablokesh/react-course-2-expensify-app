@@ -32,7 +32,7 @@ export default class ExpenseForm extends React.Component {
 		this.setState(() => ({ note }));
 	};
 
-	onAmountChange = (e) =>{
+	onAmountChange = (e) => {
 		const amount = e.target.value;
 		if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
 			this.setState(() => ({amount}));
@@ -45,7 +45,7 @@ export default class ExpenseForm extends React.Component {
 		}
 	}
 
-	onFocusChange = ({ focused }) =>{
+	onFocusChange = ({ focused }) => {
 		this.setState(() => ({calendarfocused:focused}));
 	}
 
@@ -86,21 +86,21 @@ export default class ExpenseForm extends React.Component {
 					/>
 
 					<SingleDatePicker
-					date={this.state.createdAt}
-					onDateChange={this.onDateChange}
-					focused={this.state.calendarfocused}
-					onFocusChange={this.onFocusChange}
-					numberOfMonths={1}
-					isOutsideRange={() => false}
+						date={this.state.createdAt}
+						onDateChange={this.onDateChange}
+						focused={this.state.calendarfocused}
+						onFocusChange={this.onFocusChange}
+						numberOfMonths={1}
+						isOutsideRange={() => false}
 					/>
+
 					<textarea
 						placeholder="Add a note for your expense(Optional)"
 						value={this.state.note}
 						onChange={this.onNoteChange}
-
 					>
 					</textarea>
-					<button>Add Expense</button>
+						<button>Add Expense</button>
 				</form>
 			</div>
 		)
